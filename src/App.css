@@ -1,4 +1,4 @@
-.App {
+.Apptitle {
   text-align: center;
 }
 
@@ -6,7 +6,10 @@
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
 }
-
+.imgbox {
+  width: 200px;
+  height: 200px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -29,4 +32,217 @@
   to {
     transform: rotate(360deg);
   }
+}
+.allchars {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 80vw;
+  height: 600vh;
+  text-align: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.chars {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin: 0 auto;
+  width: 20vw;
+  padding: 10px;
+}
+img {
+  height: 20vh;
+  width: 20vw;
+}
+.compare {
+  width: 80vw;
+  height: 60vh;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+.compstats {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.inputs {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.p1 {
+  background-color: transparent;
+  border-color: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  width: 150px;
+  margin-right: 150px;
+  margin-left: 150px;
+  color: white;
+}
+input {
+  width: 50px;
+}
+.p2 {
+  background-color: transparent;
+  border-color: 1px solid blue;
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  width: 150px;
+  margin-right: 150px;
+  margin-left: 150px;
+  color: white;
+}
+.const {
+  display: flex;
+  justify-content: space-between;
+}
+.mainPics {
+  height: 300px;
+  width: 450px;
+}
+.pics {
+  height: auto;
+}
+
+.body {
+  background-color: rgba(69, 69, 70, 0.884);
+}
+.box {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(53, 49, 49);
+}
+
+.box .inner {
+  width: 400px;
+  height: 200px;
+  line-height: 200px;
+  font-size: 4em;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.box .inner:first-child {
+  background-color: red;
+  color: blue;
+  transform-origin: right;
+  transform: perspective(100px) rotateY(-15deg);
+}
+
+.box .inner:last-child {
+  background-color: darkblue;
+  color: red;
+  transform-origin: left;
+  transform: perspective(100px) rotateY(15deg);
+}
+
+.box .inner span {
+  position: absolute;
+  animation: marquee 5s linear infinite;
+}
+
+.box .inner:first-child span {
+  animation-delay: 2.5s;
+  left: -100%;
+}
+
+@keyframes marquee {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: -100%;
+  }
+}
+.red {
+  color: red;
+  font-size: 2em;
+}
+.blue {
+  color: blue;
+  font-size: 2em;
+}
+
+.create:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.create:hover {
+  outline: none;
+  border-color: white;
+  box-shadow: 0 0 10px white;
+  color: white;
+}
+.create {
+  background-color: transparent;
+  border: 1px solid white;
+  box-shadow: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 15px;
+  width: 65px;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.del {
+  background-color: transparent;
+  border: 1px solid red;
+  color: red;
+  border-radius: 20px;
+}
+.del:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.del:hover {
+  outline: none;
+  border-color: white;
+  box-shadow: 0 0 10px white;
+  color: white;
+}
+.p1:focus {
+  outline: none;
+  border-color: red;
+  box-shadow: 2px;
+}
+.p2:focus {
+  outline: none;
+  border-color: blue;
+  box-shadow: 2px;
+}
+.compstats {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 3em;
+  background: -webkit-linear-gradient(red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.smashlogo {
+  margin-top: 50px;
+  width: 100px;
+  height: 100px;
+}
+.topbox {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(53, 49, 49);
+  border-bottom: 2px solid red;
 }
